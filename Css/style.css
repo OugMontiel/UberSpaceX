@@ -37,20 +37,51 @@ body{
 .Titulo{
     background-color: rgb(216, 216, 25);
     grid-area: Titulo;
+    display: flex;
 }
 .obcionesDerecha{
     background-color: rgb(199, 141, 16);
     grid-area: obcionesDerecha;
+    display: flex;
 }
 .obcionesIzquierda{
     background-color: rgb(33, 238, 84);
     grid-area: obcionesIzquierda;
+    display: flex;
+    flex-direction: column;
 }
 .centro{
     background-color: rgb(28, 185, 151);
     grid-area: centro;
+    display: flex;
 }
 .barraNavegacion {
     background-color: rgb(88, 32, 139);
     grid-area: barraNavegacion;
+    display: flex;
 }
+
+.article-group {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+    gap: 10px; /* Espacio entre los elementos */
+    margin-bottom: 20px; /* Espacio entre los artículos */
+}
+.check {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc; /* Color de fondo del div de verificación */
+    border-radius: 50%; /* Forma circular */
+}
+.content {
+    flex: 1; /* El contenido ocupa todo el espacio disponible */
+}
+.content h2 {
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+.content p {
+    font-size: .6rem;
+    color: #666;
+}
+
