@@ -315,10 +315,11 @@ body {
 
 
 .footer {
-    background: coral;
+    background-image:url('../storage/img/fooder/fondo.svg');
+    background-position: center 100%;
     grid-area: section__footer;
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 9fr 1fr;
     grid-template-areas: ". footer__menu .";
 }
 
@@ -336,8 +337,13 @@ body {
 
 .footer ul li a {
     text-decoration: none;
+    color: var(--color--five);
     display: flex;
     flex-direction: column;
+}
+.footer img{
+    padding-bottom: .5em;
+    height: 2em;
 }
 
 .nav__information {
